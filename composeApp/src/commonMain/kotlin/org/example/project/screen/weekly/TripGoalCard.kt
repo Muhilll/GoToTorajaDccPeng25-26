@@ -32,7 +32,7 @@ fun TripGoalCard(week: Week) {
             color = Color(0xFF22C55E)
         ),
         colors = CardDefaults.cardColors(
-            containerColor = Color(0xFFD1FAE5)
+            containerColor = Color(0xFFD3FDE1)
         ),
         modifier = Modifier.fillMaxWidth(),
     ) {
@@ -72,7 +72,7 @@ fun TripGoalCard(week: Week) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(8.dp),
-                color = Color(0xFF22C55E)
+                color = Color(0xFF13EC5B)
             )
 
             Spacer(modifier = Modifier.height(8.dp))

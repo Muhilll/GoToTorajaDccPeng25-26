@@ -43,6 +43,7 @@ kotlin {
             implementation(libs.coil3.coil.compose)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.transitions)
+            implementation(libs.kotlinx.datetime)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

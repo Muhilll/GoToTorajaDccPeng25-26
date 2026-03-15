@@ -69,7 +69,7 @@ fun MemberContributionItem(member: Member) {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(6.dp),
-            color = Color(0xFF22C55E)
+            color = Color(0xFF13EC5B)
         )
 
         Spacer(modifier = Modifier.height(4.dp))

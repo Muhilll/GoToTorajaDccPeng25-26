@@ -38,7 +38,7 @@ import org.example.project.model.Member
 import org.example.project.model.Week
 import org.jetbrains.compose.resources.painterResource
 
-class WeeklyGoal(
+class WeeklyGoalScree(
     private val week: Week
 ): Screen{
     @Composable
@@ -109,10 +109,6 @@ fun WeeklyGoalPage(
                 }
             },
             title = {
-                Text(
-                    text = "Go To Toraja",
-                    fontWeight = FontWeight.Bold
-                )
             }
         )
         Column (

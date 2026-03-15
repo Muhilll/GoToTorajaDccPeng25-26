@@ -23,16 +23,14 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.example.project.model.Week
 import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.runtime.remember
 import androidx.compose.material3.ripple
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.rememberCoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @Composable
-fun FinalGoalItemPage(week: Week, onClick: () -> Unit) {
+fun FinalGoalItem(week: Week, onClick: () -> Unit) {
     val scope = rememberCoroutineScope()
     val interactionSource = remember { MutableInteractionSource() }
 
@@ -87,7 +85,7 @@ fun FinalGoalItemPage(week: Week, onClick: () -> Unit) {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(6.dp).padding(horizontal = 10.dp),
-            color = Color(0xFF22C55E)
+            color = Color(0xFF13EC5B)
         )
 
         Spacer(modifier = Modifier.height(4.dp))
