@@ -18,6 +18,7 @@ coilCompose = "2.7.0"
 coilComposeVersion = "3.2.0"
 voyagerNavigator = "1.1.0-beta03"
 voyagerTransitions = "1.1.0-beta03"
+voyagerTabNavigator = "1.1.0-beta03"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -42,6 +43,7 @@ coil3-coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", versio
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyagerNavigator" }
 voyager-transitions = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyagerTransitions" }
+voyager-tab-navigator = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyagerTabNavigator" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

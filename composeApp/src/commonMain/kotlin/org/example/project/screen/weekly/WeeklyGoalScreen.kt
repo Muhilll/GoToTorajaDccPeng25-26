@@ -109,6 +109,11 @@ fun WeeklyGoalPage(
                 }
             },
             title = {
+                Text(
+                    text = "Weekly Goal",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
             }
         )
         Column (

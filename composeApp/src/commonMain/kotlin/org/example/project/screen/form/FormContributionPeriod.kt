@@ -89,7 +89,6 @@ fun FormContributionPeriodPage() {
 
                 TextButton(
                     onClick = {
-
                         val millis = datePickerState.selectedDateMillis
 
                         if (millis != null) {
@@ -134,6 +133,11 @@ fun FormContributionPeriodPage() {
                 }
             },
             title = {
+                Text(
+                    text = "Create Contribution Periode",
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
             }
         )
 

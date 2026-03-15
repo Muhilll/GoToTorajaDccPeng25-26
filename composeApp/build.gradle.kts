@@ -44,6 +44,7 @@ kotlin {
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.transitions)
             implementation(libs.kotlinx.datetime)
+            implementation(libs.voyager.tab.navigator)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
