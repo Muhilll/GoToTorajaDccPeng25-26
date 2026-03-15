@@ -148,7 +148,7 @@ fun HomePage(){
             contentColor = Color.White,
             containerColor = Color(0xFF22C55E),
             elevation = FloatingActionButtonDefaults.elevation(5.dp),
-            modifier = Modifier.align(Alignment.BottomEnd).padding(end = 20.dp, bottom = 40.dp)
+            modifier = Modifier.align(Alignment.BottomEnd).padding(all = 20.dp)
         ){
             Icon(
                 painter = painterResource(Res.drawable.add),
