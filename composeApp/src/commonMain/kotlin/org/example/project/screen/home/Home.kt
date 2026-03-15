@@ -36,7 +36,6 @@ import org.jetbrains.compose.resources.painterResource
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import gototorajaapp.composeapp.generated.resources.add
-import org.example.project.screen.form.FormContributionPeriodScreen
 import org.example.project.screen.weekly.WeeklyGoalScree
 
 @Composable
@@ -76,9 +75,9 @@ fun HomePage(){
         )
     )
 
-    val navigator = LocalNavigator.currentOrThrow.parent ?: LocalNavigator.currentOrThrow
+    val navigator = LocalNavigator.current
 
-    Box(){
+    Box{
         Column (
             modifier = Modifier
                 .fillMaxSize()
@@ -132,7 +131,7 @@ fun HomePage(){
 
                         FinalGoalItem(
                             week = week,
-                            onClick = {navigator.push(WeeklyGoalScree(week = week))}
+                            onClick = {navigator?.push(WeeklyGoalScree(week = week))}
                         )
 
                         Spacer(modifier = Modifier.height(16.dp))
@@ -143,7 +142,7 @@ fun HomePage(){
 
         FloatingActionButton(
             onClick = {
-                navigator.push(FormContributionPeriodScreen())
+                navigator?.push(FormContributionPeriodScreen())
             },
             contentColor = Color.White,
             containerColor = Color(0xFF22C55E),

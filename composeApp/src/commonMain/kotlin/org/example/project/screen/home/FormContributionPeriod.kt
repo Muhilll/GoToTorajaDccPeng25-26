@@ -1,7 +1,6 @@
-package org.example.project.screen.form
+package org.example.project.screen.home
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.PressInteraction
 import androidx.compose.foundation.layout.Box
@@ -328,11 +327,11 @@ fun FormContributionPeriodPage() {
                     containerColor = Color(0xFF22C55E)
                 )
             ) {
-
                 Text(
-                    text = "Create Contribution Period",
+                    text = "Save Changes",
                     fontWeight = FontWeight.Bold,
-                    color = Color.Black
+                    color = Color.Black,
+                    fontSize = 17.sp
                 )
             }
 
@@ -344,11 +343,9 @@ fun FormContributionPeriodPage() {
                 Text(
                     text = "Cancel",
                     color = Color.Gray,
-                    fontSize = 14.sp
+                    fontSize = 17.sp
                 )
             }
-
-
         }
     }
 }

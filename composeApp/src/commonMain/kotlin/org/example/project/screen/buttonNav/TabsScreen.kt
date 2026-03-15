@@ -20,11 +20,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.core.screen.Screen
+import cafe.adriel.voyager.navigator.LocalNavigator
 import gototorajaapp.composeapp.generated.resources.Res
 import gototorajaapp.composeapp.generated.resources.setting
 import kotlinx.coroutines.launch
 import org.example.project.screen.home.HomeTab
 import org.example.project.screen.profile.ProfileTab
+import org.example.project.screen.setting.SettingsScreen
 import org.jetbrains.compose.resources.painterResource
 
 class TabsScreen : Screen {
@@ -32,7 +34,7 @@ class TabsScreen : Screen {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     override fun Content() {
-
+        val navigator = LocalNavigator.current
         val tabs = listOf(HomeTab, ProfileTab)
 
         val pagerState = rememberPagerState(
@@ -53,7 +55,9 @@ class TabsScreen : Screen {
                         )
                     },
                     actions = {
-                        IconButton(onClick = {}) {
+                        IconButton(onClick = {
+                            navigator?.push(SettingsScreen())
+                        }) {
                             Icon(
                                 painter = painterResource(Res.drawable.setting),
                                 contentDescription = null,

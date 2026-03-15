@@ -36,34 +36,14 @@ fun ProfileHeader() {
     Column (
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
-        Box {
-
-            Image(
-                painter = painterResource(Res.drawable.avatar),
-                contentDescription = null,
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .size(120.dp)
-                    .clip(CircleShape)
-            )
-
-            Box(
-                modifier = Modifier
-                    .align(Alignment.BottomEnd)
-                    .size(32.dp)
-                    .clip(CircleShape)
-                    .background(Color(0xFF22C55E)),
-                contentAlignment = Alignment.Center
-            ) {
-                Icon(
-                    painter = painterResource(Res.drawable.edit),
-                    contentDescription = null,
-                    tint = Color.White,
-                    modifier = Modifier.size(16.dp).padding(start = 2.dp, bottom = 2.dp)
-                )
-            }
-        }
+        Image(
+            painter = painterResource(Res.drawable.avatar),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(120.dp)
+                .clip(CircleShape)
+        )
 
         Spacer(Modifier.height(12.dp))
 
