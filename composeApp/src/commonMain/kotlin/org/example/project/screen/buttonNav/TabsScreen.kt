@@ -24,6 +24,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import gototorajaapp.composeapp.generated.resources.Res
 import gototorajaapp.composeapp.generated.resources.setting
 import kotlinx.coroutines.launch
+import org.example.project.screen.budget.BudgetTab
 import org.example.project.screen.home.HomeTab
 import org.example.project.screen.profile.ProfileTab
 import org.example.project.screen.setting.SettingsScreen
@@ -35,7 +36,7 @@ class TabsScreen : Screen {
     @Composable
     override fun Content() {
         val navigator = LocalNavigator.current
-        val tabs = listOf(HomeTab, ProfileTab)
+        val tabs = listOf(HomeTab, ProfileTab, BudgetTab)
 
         val pagerState = rememberPagerState(
             initialPage = 0,
